@@ -97,7 +97,7 @@ module.exports = {
         new HtmlWebPackPlugin({
             page: 'index',
             template: '!!ejs-webpack-loader!src/client/views/index.ejs',
-            filename: "./landing.html"
+            filename: "./index.html"
         }),
     	new CleanWebpackPlugin({
                 // Write Logs to Console

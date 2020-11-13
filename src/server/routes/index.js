@@ -5,7 +5,7 @@ const   express     = require('express'),
 // Send Landing Page
 
 router.get('/' ,(req, res) => {
-    res.sendFile('dist/landing.html' , { root: __dirname + '/../../../' })
+    res.sendFile('dist/index.html' , { root: __dirname + '/../../../' })
 });
 
 // Send an not found error
