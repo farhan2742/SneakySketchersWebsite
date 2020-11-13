@@ -6,7 +6,6 @@ const dotenv                = require('dotenv'),
       cors                  = require('cors'),
       path                  = require('path'),
       methodOverride        = require('method-override'),
-      expressSession        = require("express-session"),
       indexRoutes           = require("./routes/index")
 
 // config dependancies
@@ -28,11 +27,6 @@ app.use(cors());
 
 
 // Express Session
-app.use(expressSession({
-  secret: process.env.PASSPORT_SECRET,
-  resave: false,
-  saveUninitialized: false
-}))
 
 // Passport
 
