@@ -1,0 +1,27 @@
+        <footer class="footer">
+			<div class="">
+				<img src="/imgs/logo.png" class="footer__logo" alt="logo">
+				<span class="footer__text">
+					<em>Developed</em> by <strong>Farhan Kiyani</strong>
+				</span>
+			</div>
+		</footer>
+		<script>
+            if("serviceWorker" in navigator){
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                        .register("./serviceWorker.js")
+                        .then(reg => console.log("true"))
+                        .catch(err => console.log(`Err: ${err}`))
+                })
+            }
+            // Check that service workers are supported
+            /*
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+            */
+        </script>

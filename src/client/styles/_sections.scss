@@ -1,0 +1,94 @@
+
+body{
+
+	.page__section {
+		padding: 2rem 4rem  !important;
+		min-height: 100vh;
+
+		.section__heading{
+			margin-top: 20px;
+		}
+	}
+
+	.section__login {
+		
+ 		background: url("/imgs/background3.jpg") no-repeat center center fixed;
+ 		background-size: cover;
+  		background-blend-mode: darken;
+  		transition: 3s;
+
+  		.login__form{
+  			background: rgba(0,0, 0, 0.5);
+  			border-radius: 1rem;
+  		}
+	}
+
+	.section__info {
+		color: black;
+	}
+
+	.section_video {
+		 background-color: rgba(0,0, 0, 0.8);
+	}
+
+	.section__plan{
+		background: url("/imgs/destination3.jpg") no-repeat center center fixed;
+ 		background-size: cover;
+  		background-blend-mode: darken;
+  		transition: 3s;
+
+  		.plan__form{
+  			margin-top: 80px;
+  			background: rgba(0,0, 0, 0.5);
+  			border-radius: 1rem;
+  		}
+	}
+
+	.section__trips{
+		
+		.trip__holder{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
+
+	.section__trip__new {
+		padding-top:80px !important;
+	}
+
+	@media only screen and (max-device-width: 480px) {
+		.page__section {
+			padding: 2rem 0.5rem  !important;
+			min-height: 100vh;
+		}
+		.section__login{
+			margin-top: 25px;
+		}
+		.section__trip__new {
+		padding-top:80px !important;
+		text-align: center;
+		}
+	}
+
+
+
+	@media only screen 
+	  and (min-device-width: 768px) 
+	  and (max-device-width: 1023px) 
+	  and (orientation: portrait) 
+	  and (-webkit-min-device-pixel-ratio: 1) {
+	  	.page__section {
+			padding: 2rem 1rem  !important;
+			min-height: 100vh;
+		}
+		.section__trip__new {
+			padding-top:80px !important;
+		}
+	}
+}
+
+	
+
+	
